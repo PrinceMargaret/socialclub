@@ -1,7 +1,9 @@
 body {
-    background-image: url("rkgit.jpeg");
+    background-position: center;
     background-size: cover;
+    
     background-repeat: no-repeat;
+    animation: bgimage 4s infinite alternate;
 }
 #heading{
     color: #A7DD3C;
@@ -11,4 +13,16 @@ body {
     color: #A7DD3C;
     background: transparent;
         
+}
+@keyframes bgimage {
+    0%{
+        background-image: url("images/rkgit.jpeg");
+    }
+     
+    50%{
+        background-image: url("images/rkgit1.jpg");
+    }
+    100%{
+        background-image: url("images/rkgit2.jpg");
+    }
 }
